@@ -1,0 +1,121 @@
+ffmpeg version N-99335-gdfbea7b210 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 9.3-win32 (GCC) 20200320
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --enable-iconv --enable-zlib --enable-libxml2 --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvmaf --enable-vulkan --enable-libvorbis --enable-amf --enable-libaom --enable-avisynth --enable-libdav1d --enable-ffnvcodec --enable-cuda-llvm --enable-libglslang --enable-libass --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvpx --enable-libwebp --enable-libmfx --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librav1e --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libvidstab --disable-libwavpack --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-libs=-lgomp
+  libavutil      56. 59.100 / 56. 59.100
+  libavcodec     58.106.100 / 58.106.100
+  libavformat    58. 58.100 / 58. 58.100
+  libavdevice    58. 11.102 / 58. 11.102
+  libavfilter     7. 87.100 /  7. 87.100
+  libswscale      5.  8.100 /  5.  8.100
+  libswresample   3.  8.100 /  3.  8.100
+  libpostproc    55.  8.100 / 55.  8.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/willk/AppData/Local/Temp/KritaFFmpegProgress.doRgKH'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '2'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'D:/Java/ISU_Project/assets/images/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'D:/Java/ISU_Project/assets/images/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'D:/Java/ISU_Project/assets/images/start.gif' ... matched as output url.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'scale=w=50:h=32'.
+Trailing option(s) found in the command: may be ignored.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/willk/AppData/Local/Temp/KritaFFmpegProgress.doRgKH.
+[file @ 000002bbedb15c40] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url D:/Java/ISU_Project/assets/images/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 2.
+Successfully parsed a group of options.
+Opening an input file: D:/Java/ISU_Project/assets/images/frame%04d.png.
+[image2 @ 000002bbedb56040] Opening 'D:/Java/ISU_Project/assets/images/frame0000.png' for reading
+[file @ 000002bbedc6ba80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002bbedb60040] Statistics: 3413 bytes read, 0 seeks
+[image2 @ 000002bbedb56040] Opening 'D:/Java/ISU_Project/assets/images/frame0001.png' for reading
+[file @ 000002bbedc6e480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002bbedc6e5c0] Statistics: 3461 bytes read, 0 seeks
+Input #0, image2, from 'D:/Java/ISU_Project/assets/images/frame%04d.png':
+  Duration: 00:00:00.08, start: 0.000000, bitrate: N/A
+    Stream #0:0, 2, 1/25: Video: png, 1 reference frame, rgba(pc), 50x31 [SAR 3937:3937 DAR 50:31], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url D:/Java/ISU_Project/assets/images/palette.png.
+Successfully parsed a group of options.
+Opening an input file: D:/Java/ISU_Project/assets/images/palette.png.
+[NULL @ 000002bbedc6aa40] Opening 'D:/Java/ISU_Project/assets/images/palette.png' for reading
+[file @ 000002bbedc6b140] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 000002bbedc6aa40] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 000002bbedc6aa40] Before avformat_find_stream_info() pos: 0 bytes read:955 seeks:0 nb_streams:1
+[png_pipe @ 000002bbedc6aa40] After avformat_find_stream_info() pos: 955 bytes read:955 seeks:0 frames:1
+Input #1, png_pipe, from 'D:/Java/ISU_Project/assets/images/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url D:/Java/ISU_Project/assets/images/start.gif.
+Successfully parsed a group of options.
+Opening an output file: D:/Java/ISU_Project/assets/images/start.gif.
+[file @ 000002bbedc6e580] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 493 times
+[graph 0 input from stream 0:0 @ 000002bbef854b40] Setting 'video_size' to value '50x31'
+[graph 0 input from stream 0:0 @ 000002bbef854b40] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 000002bbef854b40] Setting 'time_base' to value '1/2'
+[graph 0 input from stream 0:0 @ 000002bbef854b40] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 000002bbef854b40] Setting 'frame_rate' to value '2/1'
+[graph 0 input from stream 0:0 @ 000002bbef854b40] w:50 h:31 pixfmt:rgba tb:1/2 fr:2/1 sar:3937/3937
+[graph 0 input from stream 1:0 @ 000002bbef7b0500] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 000002bbef7b0500] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 000002bbef7b0500] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 000002bbef7b0500] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 000002bbef7b0500] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 000002bbef7b0500] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 000002bbef7b0980] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 000002bbef7b0e00] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000002bbef79e800] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 000002bbef7c3a40] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000002bbef79e800] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 000002bbef7aed40] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 000002bbedb73000] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 000002bbef7b0e00] w:50 h:31 fmt:rgba sar:3937/3937 -> w:50 h:31 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 000002bbedb7ff40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 000002bbef7c3a40] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 000002bbef79e800] [framesync @ 000002bbef7d2fc8] Selected 1/50 time base
+[Parsed_paletteuse_0 @ 000002bbef79e800] [framesync @ 000002bbef7d2fc8] Sync level 2
+Output #0, gif, to 'D:/Java/ISU_Project/assets/images/start.gif':
+  Metadata:
+    encoder         : Lavf58.58.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 50x31 [SAR 1:1 DAR 50:31], 0/1, q=2-31, 200 kb/s, 2 fps, 100 tbn, 2 tbc (default)
+    Metadata:
+      encoder         : Lavc58.106.100 gif
+Clipping frame in rate conversion by 0.000008
+[gif @ 000002bbedc6ddc0] 50x31 image at pos (0;0) [area:50x31]
+[Parsed_paletteuse_0 @ 000002bbef79e800] [framesync @ 000002bbef7d2fc8] Sync level 0
+[out_0_0 @ 000002bbef7b07c0] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=    2 fps=0.0 q=-0.0 Lsize=       3kB time=00:00:00.51 bitrate=  54.1kbits/s speed= 103x    
+[AVIOContext @ 000002bbedb55e00] Statistics: 0 seeks, 1 writeouts
+video:3kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.582920%
+Input file #0 (D:/Java/ISU_Project/assets/images/frame%04d.png):
+  Input stream #0:0 (video): 2 packets read (6874 bytes); 2 frames decoded; 
+  Total: 2 packets (6874 bytes) demuxed
+Input file #1 (D:/Java/ISU_Project/assets/images/palette.png):
+  Input stream #1:0 (video): 1 packets read (955 bytes); 1 frames decoded; 
+  Total: 1 packets (955 bytes) demuxed
+Output file #0 (D:/Java/ISU_Project/assets/images/start.gif):
+  Output stream #0:0 (video): 2 frames encoded; 2 packets muxed (3431 bytes); 
+  Total: 2 packets (3431 bytes) muxed
+3 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 000002bbedb62500] Statistics: 0 seeks, 1 writeouts
+[AVIOContext @ 000002bbedc6b280] Statistics: 955 bytes read, 0 seeks
