@@ -10,4 +10,4 @@ Enjoy
 _Please note, the above message was written by a literal 16 year old._
 
 ---
-![Preview screenshot](assets/images/Screenshot.png?raw=true)
+![Preview screenshot](assets/images/screenshot.png?raw=true)
